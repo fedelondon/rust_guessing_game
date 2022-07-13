@@ -27,7 +27,7 @@ fn main() {
         if guess <= 100 {
             println!("You guesses {}", guess);
             match guess.cmp(&secret_number) {
-                Ordering::Less => println!("{}", "Too small!".red()),
+                Ordering::Less => println!("{}", "Too small!".yellow()),
                 Ordering::Greater => println!("{}", "Too big!".red()),
                 Ordering::Equal => {
                     println!(
